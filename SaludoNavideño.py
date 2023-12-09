@@ -11,7 +11,7 @@ vertices = (
     (0, 1, 0)
 )
 
-edges = (
+aristas = (
     (0, 1),
     (1, 2),
     (2, 3),
@@ -25,8 +25,8 @@ edges = (
 def draw_pyramid():
     glColor3f(0, 1, 0)
     glBegin(GL_LINES)
-    for edge in edges:
-        for vertex in edge:
+    for arista in aristas:
+        for vertex in arista:
             glVertex3fv(vertices[vertex])
     glEnd()
 
